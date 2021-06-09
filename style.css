@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
 
 :root {
-    --green: #51ff00;
+    --green: #1f58ff;
+
 }
 
 * {
@@ -67,7 +68,8 @@ section {
 }
 
 .btn:hover {
-    background: var(--green);
+    background-color: var(--green);
+    box-shadow: 0 0 10px var(--green), 0 0 40px var(--green);
 }
 
 .heading{
@@ -126,35 +128,38 @@ header .navbar {
 
 header .navbar ul {
     list-style: none;
-    padding: 1rem 3rem;
+    padding: 1rem 3rem;}
+
+header .navbar ul li a:hover {   
+    background-color: var(--green);
+    box-shadow: 0 0 10px var(--green), 0 0 40px var(--green);
+        
+    
 }
-
-
 header .navbar ul li a {
     display: block;
     padding: 1rem;
     margin: 1.5rem 0;
     background: #333;
-    color: #fff;
+    color: rgb(255, 255, 255);
     font-size: 2rem;
     border-radius: 5rem;
 }
 
-header .navbar ul li a:hover {
-    background: var(--green);
-}
+
 
 #menu {
     position: fixed;
     top: 2rem;
     right: 2rem;
-    background: #333;
+    background: rgb(0, 0, 0);
     color: #fff;
     cursor: pointer;
     font-size: 2.5rem;
     padding: 1ren 1.5rem;
     z-index: 1000;
     display: none;
+    
 }
 
 .home {
@@ -396,6 +401,7 @@ header .navbar ul li a:hover {
     text-align: center;
     line-height: 50px;
     font-size: 32px;
+    
   }
   
 
